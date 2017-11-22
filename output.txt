@@ -1,0 +1,19 @@
+Three Most Popular Articles
+
+Article	Times Read
+Candidate is jerk, alleges rival	342102
+Bears love berries, alleges bear	256365
+Bad things gone, say good people	171762
+
+Authors by Popularity
+
+Author	Times Read
+Anonymous Contributor	171762
+Markoff Chaney	85387
+Ursula La Multa	512805
+Rudolf von Treppenwitz	427781
+
+Frequent Errors
+
+Date	Percentage
+2016-07-17	2.26%
