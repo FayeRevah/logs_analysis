@@ -4,7 +4,8 @@
 
 from flask import Flask, request, redirect, url_for, render_template
 
-from logs_analysisdb import get_popular_articles, get_high_errors, get_popular_authors
+from logs_analysisdb import get_popular_articles, get_high_errors,
+    get_popular_authors
 
 app = Flask(__name__)
 
@@ -42,12 +43,13 @@ HTML_WRAP = '''\
 
 @app.route('/', methods=['GET'])
 def main():
-  '''Main page of the forum.'''
-  dict1 = get_high_errors()
-  dict2 = get_popular_authors()
-  dict3 = get_popular_articles()
-  return render_template('template.html', result=dict3, result2=dict2, result3=dict1)
+    '''Main page of the forum.'''
+    dict1 = get_high_errors()
+    dict2 = get_popular_authors()
+    dict3 = get_popular_articles()
+    return render_template('template.html', result=dict3, result2=dict2,
+        result3=dict1)
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=8000)
