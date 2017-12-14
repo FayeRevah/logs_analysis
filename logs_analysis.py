@@ -4,8 +4,9 @@
 
 from flask import Flask, request, redirect, url_for, render_template
 
-from logs_analysisdb import get_popular_articles, get_high_errors,
-    get_popular_authors
+from logs_analysisdb import (get_popular_articles,
+                             get_high_errors,
+                             get_popular_authors)
 
 app = Flask(__name__)
 
